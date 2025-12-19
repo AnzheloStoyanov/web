@@ -19,6 +19,5 @@ export async function strapiFetch(path: string) {
     const body = await res.text();
     throw new Error(`Strapi error ${res.status}: ${body}\nURL: ${url}`);
   }
-
   return res.json();
 }
